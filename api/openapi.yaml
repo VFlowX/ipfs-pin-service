@@ -329,6 +329,7 @@ paths:
       summary: List pin objects
       tags:
       - pins
+      x-eov-operation-handler: controllers/PinsController
     post:
       description: Add a new pin object for the current access token
       operationId: addPin
@@ -408,6 +409,7 @@ paths:
       summary: Add pin object
       tags:
       - pins
+      x-eov-operation-handler: controllers/PinsController
   /pins/{requestid}:
     delete:
       description: Remove a pin object
@@ -486,6 +488,7 @@ paths:
       summary: Remove pin object
       tags:
       - pins
+      x-eov-operation-handler: controllers/PinsController
     get:
       description: Get a pin object and its status
       operationId: getPinByRequestId
@@ -567,6 +570,7 @@ paths:
       summary: Get pin object
       tags:
       - pins
+      x-eov-operation-handler: controllers/PinsController
     post:
       description: Replace an existing pin object (shortcut for executing remove and
         add operations in one step to avoid unnecessary garbage collection of blocks
@@ -656,6 +660,7 @@ paths:
       summary: Replace pin object
       tags:
       - pins
+      x-eov-operation-handler: controllers/PinsController
 components:
   examples:
     BadRequestExample:
