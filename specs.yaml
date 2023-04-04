@@ -275,7 +275,7 @@ Pin objects can be listed by executing `GET /pins` with optional parameters:
 "
 
 servers:
-  - url: https://pinning-service.example.com
+  - url: http://localhost:8080
 
 tags:
   - name: pins

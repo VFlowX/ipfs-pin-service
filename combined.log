@@ -1,1 +1,47 @@
 {"level":"info","message":"Express server running","service":"user-service","timestamp":"2023-04-03T09:02:24.895Z"}
+{"level":"info","message":"Express server running","service":"user-service","timestamp":"2023-04-03T09:18:00.222Z"}
+{"level":"info","message":"Express server running","service":"user-service","timestamp":"2023-04-03T09:39:59.882Z"}
+{"level":"info","message":"Express server running","service":"user-service","timestamp":"2023-04-03T09:51:32.621Z"}
+{"level":"info","message":"Express server running","service":"user-service","timestamp":"2023-04-03T09:52:15.484Z"}
+{"level":"info","message":"Express server running","service":"user-service","timestamp":"2023-04-03T09:52:27.944Z"}
+{"level":"info","message":"Express server running","service":"user-service","timestamp":"2023-04-03T09:54:21.681Z"}
+{"level":"info","message":"Express server running","service":"user-service","timestamp":"2023-04-03T09:58:18.033Z"}
+{"level":"info","message":"Express server running","service":"user-service","timestamp":"2023-04-03T09:59:44.010Z"}
+{"level":"info","message":"Express server running","service":"user-service","timestamp":"2023-04-03T10:01:21.641Z"}
+{"level":"info","message":"Express server running","service":"user-service","timestamp":"2023-04-03T10:02:34.910Z"}
+{"level":"info","message":"Express server running","service":"user-service","timestamp":"2023-04-03T10:07:53.241Z"}
+{"level":"info","message":"Express server running","service":"user-service","timestamp":"2023-04-03T10:11:51.524Z"}
+{"level":"info","message":"Express server running","service":"user-service","timestamp":"2023-04-03T10:16:14.996Z"}
+{"level":"info","message":"Express server running","service":"user-service","timestamp":"2023-04-03T10:24:36.430Z"}
+{"level":"info","message":"Express server running","service":"user-service","timestamp":"2023-04-03T10:24:54.304Z"}
+{"level":"info","message":"Express server running","service":"user-service","timestamp":"2023-04-03T10:26:24.184Z"}
+{"level":"info","message":"Express server running","service":"user-service","timestamp":"2023-04-03T10:26:40.351Z"}
+{"level":"info","message":"Express server running","service":"user-service","timestamp":"2023-04-03T10:29:02.630Z"}
+{"level":"error","message":"Express Server failure","service":"user-service","timestamp":"2023-04-03T10:29:22.227Z"}
+{"level":"error","service":"user-service","timestamp":"2023-04-03T10:29:22.234Z"}
+{"level":"info","message":"Express server running","service":"user-service","timestamp":"2023-04-03T10:29:38.584Z"}
+{"level":"error","message":"Express Server failure","service":"user-service","timestamp":"2023-04-04T02:01:36.676Z"}
+{"level":"error","service":"user-service","timestamp":"2023-04-04T02:01:36.681Z"}
+{"level":"error","message":"Express Server failure","service":"user-service","timestamp":"2023-04-04T02:02:05.328Z"}
+{"level":"error","service":"user-service","timestamp":"2023-04-04T02:02:05.332Z"}
+{"level":"error","message":"Express Server failure Cannot read properties of undefined (reading 'middleware')","service":"user-service","stack":"TypeError: Cannot read properties of undefined (reading 'middleware')\n    at ExpressServer.setupMiddleware (E:\\Project\\ipfs-pin-service\\expressServer.js:29:40)\n    at new ExpressServer (E:\\Project\\ipfs-pin-service\\expressServer.js:25:10)\n    at launchServer (E:\\Project\\ipfs-pin-service\\index.js:7:26)\n    at Object.<anonymous> (E:\\Project\\ipfs-pin-service\\index.js:16:1)\n    at Module._compile (node:internal/modules/cjs/loader:1126:14)\n    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1180:10)\n    at Module.load (node:internal/modules/cjs/loader:1004:32)\n    at Function.Module._load (node:internal/modules/cjs/loader:839:12)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)\n    at node:internal/main/run_main_module:17:47","timestamp":"2023-04-04T02:02:53.270Z"}
+{"level":"error","service":"user-service","timestamp":"2023-04-04T02:02:53.278Z"}
+{"level":"info","message":"Express server running","service":"user-service","timestamp":"2023-04-04T02:04:00.235Z"}
+{"level":"info","message":"Express server running","service":"user-service","timestamp":"2023-04-04T02:13:31.762Z"}
+{"level":"info","message":"Express server running","service":"user-service","timestamp":"2023-04-04T02:14:19.218Z"}
+{"level":"info","message":"Express server running","service":"user-service","timestamp":"2023-04-04T02:16:52.707Z"}
+{"level":"info","message":"Express server running","service":"user-service","timestamp":"2023-04-04T02:19:37.086Z"}
+{"level":"info","message":"Express server running","service":"user-service","timestamp":"2023-04-04T02:21:51.788Z"}
+{"level":"info","message":"Express server running","service":"user-service","timestamp":"2023-04-04T02:24:04.970Z"}
+{"level":"info","message":"Express server running","service":"user-service","timestamp":"2023-04-04T02:25:12.494Z"}
+{"level":"info","message":"Express server running","service":"user-service","timestamp":"2023-04-04T02:25:38.657Z"}
+{"level":"info","message":"Express server running","service":"user-service","timestamp":"2023-04-04T03:28:24.546Z"}
+{"level":"info","message":"Express server running","service":"user-service","timestamp":"2023-04-04T03:47:04.708Z"}
+{"level":"info","message":"Express server running","service":"user-service","timestamp":"2023-04-04T03:47:47.018Z"}
+{"level":"info","message":"Express server running","service":"user-service","timestamp":"2023-04-04T03:52:28.699Z"}
+{"level":"info","message":"Express server running","service":"user-service","timestamp":"2023-04-04T03:52:59.722Z"}
+{"level":"info","message":"Express server running","service":"user-service","timestamp":"2023-04-04T03:54:15.727Z"}
+{"level":"info","message":"Express server running","service":"user-service","timestamp":"2023-04-04T03:57:42.437Z"}
+{"level":"info","message":"Express server running","service":"user-service","timestamp":"2023-04-04T03:59:54.448Z"}
+{"level":"info","message":"Express server running","service":"user-service","timestamp":"2023-04-04T04:00:25.512Z"}
+{"level":"info","message":"Express server running","service":"user-service","timestamp":"2023-04-04T04:00:52.638Z"}

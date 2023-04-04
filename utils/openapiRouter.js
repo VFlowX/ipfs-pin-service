@@ -37,7 +37,7 @@ function openApiRouter() {
        * If there's no openapi object, we have nothing to do, and pass on to next middleware.
        */
       if (request.openapi === undefined
-          || request.openapi.schema === undefined
+        || request.openapi.schema === undefined
       ) {
         next();
         return;
@@ -58,7 +58,7 @@ function openApiRouter() {
       }
     } catch (error) {
       console.error(error);
-      const err = { code: 500, error: error.message };
+      const err = { code: 500, error };
       handleError(err, request, response, next);
     }
   };

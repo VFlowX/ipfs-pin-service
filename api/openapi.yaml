@@ -146,9 +146,8 @@ info:
   x-logo:
     url: https://bafybeidehxarrk54mkgyl5yxbgjzqilp6tkaz2or36jhq24n3rdtuven54.ipfs.dweb.link/?filename=ipfs-pinning-service.svg
 servers:
-- url: https://pinning-service.example.com
-security:
-- accessToken: []
+- url: http://0.0.0.0:8080
+
 tags:
 - name: pins
 paths:
@@ -1164,3 +1163,5 @@ components:
         \ revoke each token separately. "
       scheme: bearer
       type: http
+security:
+  - accessToken: []
