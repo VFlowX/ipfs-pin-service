@@ -26,7 +26,6 @@ class ExpressServer {
   }
 
   setupMiddleware() {
-    console.log(this.openApiPath);
     const validator = OpenApiValidator.middleware({
       apiSpec: this.openApiPath,
       validateSecurity: {

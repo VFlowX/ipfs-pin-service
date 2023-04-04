@@ -103,7 +103,15 @@ class Controller {
   static async handleRequest(request, response, serviceOperation) {
     try {
       const serviceResponse = await serviceOperation(this.collectRequestParams(request));
-      console.log('serviceResponse===========', request)
+      console.log('serviceRequest===========')
+      console.log('url', request.url);
+      console.log('body', request.body);
+      console.log('params', request.params);
+      console.log('headers', request.headers);
+      console.log('serviceRequest===========')
+      console.log('serviceResponse===========')
+      console.log(serviceResponse)
+      console.log('serviceResponse===========', serviceResponse)
       Controller.sendResponse(response, serviceResponse);
     } catch (error) {
       Controller.sendError(response, error);

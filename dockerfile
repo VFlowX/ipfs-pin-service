@@ -9,5 +9,5 @@ COPY . .
 # dev with nodemon
 # RUN npm install nodemon && npm install
 
-CMD npm run start
+CMD npm run dev
 # CMD npm run dev

@@ -10,6 +10,7 @@ const Service = require('./Service');
 * */
 const addPin = ({ pin }) => new Promise(
   async (resolve, reject) => {
+    console.log({ pin });
     try {
       resolve(Service.successResponse({
         pin,
