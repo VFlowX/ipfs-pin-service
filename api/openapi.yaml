@@ -146,7 +146,7 @@ info:
   x-logo:
     url: https://bafybeidehxarrk54mkgyl5yxbgjzqilp6tkaz2or36jhq24n3rdtuven54.ipfs.dweb.link/?filename=ipfs-pinning-service.svg
 servers:
-- url: http://0.0.0.0:8080
+- url: https://thuthapdulieu.ceid.gov.vn/ipfs/
 
 tags:
 - name: pins
