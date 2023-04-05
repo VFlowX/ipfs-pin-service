@@ -1,5 +1,6 @@
 /* eslint-disable no-unused-vars */
 const Service = require('./Service');
+const { processFileMetadata } = require('./mongo/metadata');
 
 /**
 * Add pin object
@@ -8,13 +9,14 @@ const Service = require('./Service');
 * pin Pin
 * returns PinStatus
 * */
-const addPin = ({ pin }) => new Promise(
+const addPin = ({ body }) => new Promise(
   async (resolve, reject) => {
-    console.log({ pin });
     try {
+      processFileMetadata(body.cid)
       resolve(Service.successResponse({
-        pin,
-      }));
+        pin: body,
+        status: 'pinned',
+      }, 202));
     } catch (e) {
       reject(Service.rejectResponse(
         e.message || 'Invalid input',
