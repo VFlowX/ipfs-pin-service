@@ -12,7 +12,7 @@ const { processFileMetadata } = require('./mongo/metadata');
 const addPin = ({ body }) => new Promise(
   async (resolve, reject) => {
     try {
-      processFileMetadata(body.cid)
+      await processFileMetadata(body)
       resolve(Service.successResponse({
         pin: body,
         status: 'pinned',

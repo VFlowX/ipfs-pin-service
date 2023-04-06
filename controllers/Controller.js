@@ -2,7 +2,7 @@ const fs = require('fs');
 const path = require('path');
 const camelCase = require('camelcase');
 const config = require('../config');
-const logger = require('../logger');
+const logger = require('../services/logger');
 
 class Controller {
   static sendResponse(response, payload) {
@@ -103,17 +103,11 @@ class Controller {
   static async handleRequest(request, response, serviceOperation) {
     try {
       const serviceResponse = await serviceOperation(this.collectRequestParams(request));
-      // console.log('serviceRequest===========')
-      // console.log('url', request.url);
-      // console.log('body', request.body);
-      // console.log('params', request.params);
-      // console.log('headers', request.headers);
-      // console.log('serviceRequest===========')
-      // console.log('serviceResponse===========')
-      // console.log(serviceResponse)
-      // console.log('serviceResponse===========', serviceResponse)
+      // logger.info(request.body)
+      // logger.info('serviceResponse===========', serviceResponse)
       Controller.sendResponse(response, serviceResponse);
     } catch (error) {
+      logger.error('handleRequest', error)
       Controller.sendError(response, error);
     }
   }

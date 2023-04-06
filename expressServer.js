@@ -9,7 +9,7 @@ const cors = require('cors');
 const cookieParser = require('cookie-parser');
 const bodyParser = require('body-parser');
 const OpenApiValidator = require('express-openapi-validator');
-const logger = require('./logger');
+const logger = require('./services/logger');
 const config = require('./config');
 
 class ExpressServer {
@@ -34,7 +34,7 @@ class ExpressServer {
             if (req.headers.authorization === `Bearer ${process.env.TOKEN}`) {
               return true;
             }
-            console.log('apikey handler throws error', schema);
+            logger.error('apikey handler throws error', schema);
             return false;
           },
         },
@@ -83,7 +83,7 @@ class ExpressServer {
   async close() {
     if (this.server) {
       await this.server.close();
-      console.log(`Server on port ${this.port} shut down`);
+      logger.log(`Server on port ${this.port} shut down`);
     }
   }
 }

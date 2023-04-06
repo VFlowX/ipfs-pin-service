@@ -1,3 +1,4 @@
+const logger = require('../logger');
 const axios = require('axios');
 const vuejxToken = process.env.VUEJX_TOKEN
 const vuejxEndpoint = 'http://vuejx-core:3000/'
@@ -11,19 +12,18 @@ async function userCreate({ db, collection, body, actionCode, app }) {
 
   let config = {
     method: 'post',
-    url: '',
+    url: vuejxEndpoint,
     headers: {
       'Content-Type': 'application/json'
     },
     data: data
   };
-
   return await axios.request(config)
     .then((response) => {
       return response.data
     })
     .catch((error) => {
-      console.log(error);
+      logger.log(error);
     });
 }
 async function userUpdateOne({ db, collection, body, filter, sort, actionCode, app }) {
@@ -36,7 +36,7 @@ async function userUpdateOne({ db, collection, body, filter, sort, actionCode, a
 
   let config = {
     method: 'post',
-    url: '',
+    url: vuejxEndpoint,
     headers: {
       'Content-Type': 'application/json'
     },
@@ -48,6 +48,38 @@ async function userUpdateOne({ db, collection, body, filter, sort, actionCode, a
       return response.data
     })
     .catch((error) => {
-      console.log(error);
+      logger.log(error);
     });
+}
+
+async function search({ db, collection, body, app }) {
+  let data = JSON.stringify({
+    query: `query search ($token: String, $body: JSON, $db: String, $collection: String, $app: String, $cache: String) {
+      search (token: $token, body: $body, db: $db, collection: $collection, app: $app, cache: $cache)
+  }`,
+    variables: { "token": vuejxToken, "body": body, "db": db, "collection": collection, "app": app, "cache": false }
+  });
+
+  let config = {
+    method: 'post',
+    maxBodyLength: Infinity,
+    url: vuejxEndpoint,
+    headers: {
+      'Content-Type': 'application/json'
+    },
+    data: data
+  };
+  return await axios.request(config)
+    .then((response) => {
+      return response.data
+    })
+    .catch((error) => {
+      logger.log(error);
+    });
+}
+
+module.exports = {
+  userCreate,
+  userUpdateOne,
+  search
 }
